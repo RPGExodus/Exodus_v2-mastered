@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.Autorzy">
+    tools:context="pl.billog_studio.exodus.Autorzy"
+    android:background="#000000">
 
     <TextView
         android:textSize="30sp"
@@ -54,5 +55,14 @@
         android:id="@+id/textView4"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powrót"
+        android:id="@+id/button_powrot"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000" />
 
 </RelativeLayout>
