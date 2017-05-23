@@ -10,6 +10,8 @@
     tools:context="pl.billog_studio.exodus.gra_atak_najemnik_a">
 
     <TextView
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"

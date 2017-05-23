@@ -36,7 +36,8 @@
         <activity android:name=".gra_atak_kobieta_b" />
         <activity android:name=".gra_atak_najemnik_a" />
         <activity android:name=".gra_end" />
-        <activity android:name=".gra_end1"></activity>
+        <activity android:name=".gra_atak_najemnik_b" />
+        <activity android:name=".gra_atak_1_2_d"></activity>
     </application>
 
 </manifest>

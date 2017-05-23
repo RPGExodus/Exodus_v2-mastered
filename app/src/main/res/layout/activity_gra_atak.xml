@@ -52,25 +52,25 @@
             android:layout_below="@id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. Nie możesz patrzeć na to bezczynnie. Wyjmując z pochwy miecz najemnika rzucasz się na porywaczy."
+            android:text="Nie możesz patrzeć na to bezczynnie. Wyjmując z pochwy miecz najemnika rzucasz się na porywaczy."
             android:id="@+id/gra_atak_1_a"
             />
             <Button
-                android:text="2. Zważając na ryzyko niepostrzeżenie sięgasz po sztylet i próbujesz rzucić w zamachowca trzymającego kobietę."
+                android:text="Zważając na ryzyko niepostrzeżenie sięgasz po sztylet i próbujesz rzucić w zamachowca trzymającego kobietę."
                 android:layout_below="@id/gra_atak_1_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/gra_atak_1_b"
                 />
             <Button
-                android:text="3. Aby uniknąć rozlewu krwi podejmujesz próbę negocjacji."
+                android:text="Aby uniknąć rozlewu krwi podejmujesz próbę negocjacji."
                 android:layout_below="@id/gra_atak_1_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/gra_atak_1_c"
                 />
             <Button
-                android:text="4. Wycofujesz się ukradkiem przez uchylone za tobą drzwi."
+                android:text="Wycofujesz się ukradkiem przez uchylone za tobą drzwi."
                 android:layout_below="@id/gra_atak_1_c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

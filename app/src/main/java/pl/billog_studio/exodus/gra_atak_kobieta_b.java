@@ -21,7 +21,7 @@ public class gra_atak_kobieta_b extends AppCompatActivity {
         final Button button = (Button)findViewById(R.id.gra_atak_kobieta_b_button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(gra_atak_kobieta_b.this, gra_atak_najemnik_a.class);
+                Intent intent = new Intent(gra_atak_kobieta_b.this, gra_atak_kobieta.class);
                 startActivity(intent);
             }
         });

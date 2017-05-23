@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class gra_atak_1_a extends AppCompatActivity {
+public class gra_atak_najemnik_b extends AppCompatActivity {
     public void onBackPressed()
     {
 
@@ -15,13 +15,12 @@ public class gra_atak_1_a extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gra_atak_1_a);
-        final Button button = (Button)findViewById(R.id.gra_atak_1_dalej);
+        setContentView(R.layout.activity_gra_atak_najemnik_b);
+        final Button button = (Button)findViewById(R.id.gra_atak_najemnik_b_button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(gra_atak_1_a.this, gra_atak_najemnik.class);
+                Intent intent = new Intent(gra_atak_najemnik_b.this, gra_end.class);
                 startActivity(intent);
-
             }
         });
     }

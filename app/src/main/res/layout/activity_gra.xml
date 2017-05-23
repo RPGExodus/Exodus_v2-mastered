@@ -44,35 +44,35 @@
                 android:layout_below="@id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Kim jestem?"
+                android:text="Kim jestem?"
                 android:id="@+id/statek_button_1_a"
                />
             <Button
                 android:layout_below="@id/statek_button_1_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2. Dokąd zmierzamy? "
+                android:text="Dokąd zmierzamy? "
                 android:id="@+id/statek_button_1_b"
                 />
             <Button
                 android:layout_below="@id/statek_button_1_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3. Kim jesteś?"
+                android:text="Kim jesteś?"
                 android:id="@+id/statek_button_1_c"
                  />
             <Button
                 android:layout_below="@id/statek_button_1_c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. Gdzie mnie znalazłeś?"
+                android:text="Gdzie mnie znalazłeś?"
                 android:id="@+id/statek_button_1_d"
                  />
             <Button
                 android:layout_below="@id/statek_button_1_d"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5. Dziękuję, wolę zostać sam."
+                android:text="Dziękuję, wolę zostać sam."
                 android:id="@+id/statek_button_1_e"
                  />
         </RelativeLayout>

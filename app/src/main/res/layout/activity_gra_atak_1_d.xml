@@ -22,7 +22,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1. Wyrzuć obciążenie po jednej burcie."
+        android:text="Wyrzuć obciążenie po jednej burcie."
         android:id="@+id/gra_atak_3b_dalej"
         android:layout_below="@+id/textView20"
         android:layout_centerHorizontal="true" />
@@ -30,7 +30,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2. Wyrzuć obciążenie po obu burtach."
+        android:text="Wyrzuć obciążenie po obu burtach."
         android:id="@+id/gra_atak_3_dalej"
         android:layout_below="@+id/gra_atak_3b_dalej"
         android:layout_centerHorizontal="true" />

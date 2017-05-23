@@ -7,23 +7,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.gra_end">
+    tools:context="pl.billog_studio.exodus.gra_atak_najemnik_b">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:paddingBottom="35dp"
-        android:text="Wkrótce zapada zmrok. Nie masz na statku nic więcej do roboty"
-        android:id="@+id/textView26"
+        android:text="Najemnik: Mam nadzieję, że nie boisz się kilku nowych siniaków."
+        android:textColor="#EF5350"
+        android:paddingLeft="5dp"
+        android:id="@+id/textView22"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="35dp"
+        android:text="Billog uczy cię do końca dnia"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView22"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Idź spać"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView26"
+        android:text="Dalej"
+        android:id="@+id/gra_atak_najemnik_b_button"
+        android:layout_below="@+id/textView28"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
