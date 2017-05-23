@@ -18,7 +18,11 @@
         <activity android:name=".Gra" />
         <activity android:name=".wczytaj_gre" />
         <activity android:name=".Ustawienia" />
-        <activity android:name=".Autorzy"></activity>
+        <activity android:name=".Autorzy" />
+        <activity android:name=".Gra_1" />
+        <activity android:name=".Gra_2" />
+        <activity android:name=".Gra_3" />
+        <activity android:name=".gra_atak"></activity>
     </application>
 
 </manifest>
