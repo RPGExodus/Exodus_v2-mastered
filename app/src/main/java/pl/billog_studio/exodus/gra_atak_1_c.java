@@ -16,7 +16,7 @@ public class gra_atak_1_c extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gra_atak_1_c);
-        final Button button = (Button)findViewById(R.id.gra_atak_2_b);
+        final Button button = (Button)findViewById(R.id.gra_atak_2_a);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_1_c.this, gra_atak_1_2c.class);

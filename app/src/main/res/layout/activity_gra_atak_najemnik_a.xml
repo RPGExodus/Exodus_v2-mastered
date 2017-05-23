@@ -7,29 +7,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.Gra_3">
+    tools:context="pl.billog_studio.exodus.gra_atak_najemnik_a">
 
     <TextView
-        android:paddingBottom="35dp"
-        android:paddingLeft="5dp"
-        android:textStyle="italic"
-        android:paddingRight="5dp"
-        android:textColor="#EF5350"
-        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Najemnik: Nazywam się Billog. Jestem najemnikiem w służbie u kupca Drake'a Ponta."
-        android:id="@+id/textView9"
+        android:textSize="18sp"
+        android:paddingBottom="35dp"
+        android:text="Najemnik: Z chęcią zatrudnimy cię w naszej gildii. Jedną z naszych filii znajdziesz w Pest, naprzeciwko ratusza. Setnikowi powiedz, że jesteś z mojego polecenia. Na pawno znajdzie się dla ciebie jakieś dobre uzbrojenie i kilka zleceń. Do zobaczenia."
+        android:id="@+id/textView25"
+        android:textStyle="italic"
+        android:textColor="#EF5350"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-         />
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_below="@id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Powrót"
-        android:id="@+id/statek_button_powrot"
-        android:layout_centerVertical="true"
+        android:text="Dalej"
+        android:id="@+id/gra_atak_najemnik_a_button"
+        android:layout_below="@+id/textView25"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

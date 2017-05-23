@@ -7,29 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.Gra_3">
+    tools:context="pl.billog_studio.exodus.gra_atak_kobieta_a">
 
     <TextView
-        android:paddingBottom="35dp"
-        android:paddingLeft="5dp"
-        android:textStyle="italic"
-        android:paddingRight="5dp"
-        android:textColor="#EF5350"
-        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Najemnik: Nazywam się Billog. Jestem najemnikiem w służbie u kupca Drake'a Ponta."
-        android:id="@+id/textView9"
+        android:textSize="18sp"
+        android:paddingBottom="35dp"
+        android:text="Najemnik wykorzystując odwróconą uwagę porywaczy wytrąca jednemu sztylet z ręki, a drugiego obezwładnia markując cios i wytrącając rywala z równowagi. Kobieta przerażona dotyka swojego gardła, na którym przed chwilą był sztylet."
+        android:id="@+id/textView23"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-         />
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_below="@id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Powrót"
-        android:id="@+id/statek_button_powrot"
-        android:layout_centerVertical="true"
+        android:text="Dalej"
+        android:id="@+id/gra_kobieta_a_button"
+        android:layout_below="@+id/textView23"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

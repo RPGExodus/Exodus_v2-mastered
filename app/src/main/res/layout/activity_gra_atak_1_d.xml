@@ -10,6 +10,8 @@
     tools:context="pl.billog_studio.exodus.gra_atak_1_d">
 
     <TextView
+        android:textSize="18sp"
+        android:paddingBottom="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pomieszczenie okazuje się być maszynownią. Nie znasz się na zasadach działania sterowca, ale widzisz, że ktoś niedawno majstrował przy obciążeniu statku. Bez trudu rozpoznajesz możliwości maszyny."
@@ -21,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1. Wyrzuć obciążenie po jednej burcie."
-        android:id="@+id/gra_atak_3_dalej"
+        android:id="@+id/gra_atak_3b_dalej"
         android:layout_below="@+id/textView20"
         android:layout_centerHorizontal="true" />
 
@@ -29,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2. Wyrzuć obciążenie po obu burtach."
-        android:id="@+id/gra_atak_3b_dalej"
-        android:layout_below="@+id/gra_atak_3_dalej"
+        android:id="@+id/gra_atak_3_dalej"
+        android:layout_below="@+id/gra_atak_3b_dalej"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

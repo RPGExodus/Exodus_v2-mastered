@@ -26,7 +26,7 @@ public class gra_atak_1_d extends AppCompatActivity {
         final Button button2 = (Button)findViewById(R.id.gra_atak_3b_dalej);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(gra_atak_1_d.this, gra_atak_kobieta.class);
+                Intent intent = new Intent(gra_atak_1_d.this, gra_atak_kobieta_b.class);
                 startActivity(intent);
             }
         });
