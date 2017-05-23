@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import Gra.*;
 
 public class gra_atak_1_b extends AppCompatActivity {
     public void onBackPressed()
@@ -21,6 +22,7 @@ public class gra_atak_1_b extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_1_b.this, gra_atak_najemnik.class);
                 startActivity(intent);
+                Wszystko.player.setDextirity(Wszystko.player.getDextirity()+1);
             }
         });
     }

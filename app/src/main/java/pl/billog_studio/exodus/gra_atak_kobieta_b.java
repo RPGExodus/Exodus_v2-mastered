@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import Gra.*;
 
 public class gra_atak_kobieta_b extends AppCompatActivity {
     public void onBackPressed()
@@ -23,6 +24,7 @@ public class gra_atak_kobieta_b extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_kobieta_b.this, gra_atak_kobieta.class);
                 startActivity(intent);
+                Wszystko.player.setIntelligence(Wszystko.player.getIntelligence()+1);
             }
         });
     }

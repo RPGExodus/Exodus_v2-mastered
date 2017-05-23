@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import Gra.*;
 
 public class Main_Menu extends AppCompatActivity {
     public void onBackPressed()
@@ -27,6 +28,7 @@ public class Main_Menu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Main_Menu.this, Gra.class);
                 startActivity(intent);
+                Wszystko.player=new Player();
                 finish();
             }
         });
@@ -55,5 +57,6 @@ public class Main_Menu extends AppCompatActivity {
             }
         });
     }
+
 
 }
