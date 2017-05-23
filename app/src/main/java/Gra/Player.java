@@ -8,6 +8,10 @@ public class Player {
     int food;
     int sleep;
     int peste;
+    int gold;
+    Itemss[] equipmnent;
+    Abillitiess[] abillities;
+    Companions[] team;
 
     public int getStrenght() {
         return strenght;
@@ -49,10 +53,7 @@ public class Player {
         return team;
     }
 
-    int gold;
-    Itemss[] equipmnent;
-    Abillitiess[] abillities;
-    Companions[] team;
+
     public Player()
     {
         strenght = 0;
@@ -106,5 +107,23 @@ public class Player {
 
     public void setTeam(Companions[] team) {
         this.team = team;
+    }
+
+
+    public String getAllData(){
+        String dane=this.getStrenght()+";"+this.getDextirity()+";"+this.getIntelligence()+";"+this.getFood()+";"+this.getSleep()+";"+this.getPeste()+";"+this.getGold()+";";
+        for(Itemss a:this.equipmnent){
+            dane+=a.toString();
+            dane+=";";
+        }
+        for(Abillitiess a:this.abillities){
+            dane+=a.toString();
+            dane+=";";
+        }
+        for(Companions a:this.team){
+            dane+=a.toString();
+            dane+=";";
+        }
+        return dane;
     }
 }
