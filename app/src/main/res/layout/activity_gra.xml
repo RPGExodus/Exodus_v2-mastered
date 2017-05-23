@@ -9,4 +9,44 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pl.billog_studio.exodus.Gra">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Budzisz się. Leżysz na czymś twardym. Widzisz drewniany sufit. Z początku niewielki ból głowy narasta , promieniuje na całe ciało. Nie wiesz jak się tu znalazłeś. Odwracasz głowę. Tu i ówdzie widzisz matki siedzące z dziećmi na prowizorycznych bagażach. Mężczyźni zebrani w grupach dyskutują o czymś bardzo żywiołowo. Napięcie wyczuwalne w powietrzu wskazuje, że obecna gawiedź nie znalazła się tu ani przypadkowo, ani dobrowolnie."
+                android:id="@+id/textView5"
+                android:paddingBottom="35dp"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_below="@id/textView5"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proszę, proszę jednak żyjesz! Witamy na pokładzie sterowca kompanii handlowej braci Grishe. Towarzystwo trochę nietypowe, głównie uciekinierzy z gór. Nie wszyscy mieli tyle szczęścia co ty. Nie mamy pojęcia co się stało, ale sądząc po nich wszystkich musiało być gorąco."/>
+            <Button
+                android:layout_below="@id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dalej"
+                android:id="@+id/next"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
 </RelativeLayout>
