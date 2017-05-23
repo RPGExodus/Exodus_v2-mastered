@@ -22,7 +22,13 @@
         <activity android:name=".Gra_1" />
         <activity android:name=".Gra_2" />
         <activity android:name=".Gra_3" />
-        <activity android:name=".gra_atak"></activity>
+        <activity android:name=".gra_atak" />
+        <activity android:name=".Gra_4" />
+        <activity android:name=".gra_atak_1_a" />
+        <activity android:name=".gra_atak_1_b" />
+        <activity android:name=".gra_atak_1_c" />
+        <activity android:name=".gra_atak_1_d" />
+        <activity android:name=".gra_atak_najemnik"></activity>
     </application>
 
 </manifest>

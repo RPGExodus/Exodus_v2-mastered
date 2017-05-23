@@ -63,6 +63,31 @@ public class Gra extends AppCompatActivity {
                 startActivity(intent3);
             }
         });
+        final Button button4 = (Button)findViewById(R.id.statek_button_1_d);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                button4.setVisibility(View.INVISIBLE);
+                count++;
+
+                if (count==2)
+                {
+                    Intent intent6= new Intent(Gra.this, gra_atak.class);
+                    startActivity(intent6);
+                    finish();
+                }
+                Intent intent4 = new Intent(Gra.this, Gra_4.class);
+                startActivity(intent4);
+            }
+        });
+        final Button button5 = (Button)findViewById(R.id.statek_button_1_e);
+        button5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                   Intent intent6= new Intent(Gra.this, gra_atak.class);
+                    startActivity(intent6);
+                    finish();
+
+            }
+        });
 
     }
 }

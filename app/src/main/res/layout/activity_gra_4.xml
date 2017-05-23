@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.Gra_1">
+    tools:context="pl.billog_studio.exodus.Gra_4">
 
     <TextView
         android:paddingBottom="35dp"
@@ -17,17 +17,17 @@
         android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Najemnik: Niestety nie wiem, ale sądząc po twoim ubraniu to do szlachty nie należysz."
-        android:id="@+id/textView7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Najemnik: Wracając z waszej stolicy natrafiliśmy na opustoszałą wioskę. Niektóre podpalone domy jeszcze się tliły. Znaleźliśmy cię nieprzytomnego i zabraliśmy ze sobą. Najemnicy też mają zasady."
+        android:id="@+id/textView11"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_below="@id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Powrót"
         android:id="@+id/statek_button_powrot"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/textView11"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

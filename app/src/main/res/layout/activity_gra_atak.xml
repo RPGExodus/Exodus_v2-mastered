@@ -9,13 +9,77 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pl.billog_studio.exodus.gra_atak">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="ATAK"
-        android:id="@+id/textView10"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp" />
+        android:id="@+id/scrollView2"
+
+        android:layout_centerHorizontal="true" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:paddingBottom="35dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rozmowę przerywa wrzask kobiet. Znad tłumu widzisz, że pod ścianą ustawiło się dwóch mężczyzn. Jeden z nich trzyma wyciągniętą szablę trzymając pasażerów na dystans. Drugi zasłania się kobietą trzymając jej na szyi sztylet."
+            android:id="@+id/textView10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:paddingLeft="5dp"
+            android:textStyle="italic"
+            android:textColor="#EF5350"
+            android:textSize="18sp"
+            android:id="@+id/textView11"
+            android:text="Porywacz: Ani drgnijcie ludzie, bo ją rozpłatam! Przejmujemy stery. Przygotujcie się na długą podróż do Hoolstorm. Lepiej oddajcie wszystkie kosztowności, bo inaczej nas rozgniewacie. Mój towarzysz jest bardzo nerwowy. Uwierzcie mi, że nie chcecie go drażnić."
+            android:layout_below="@id/textView10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:textSize="18sp"
+            android:id="@+id/textView12"
+            android:layout_below="@id/textView11"
+            android:text="Po paru ponagleniach ludzie niechętnie kładą przed porywaczami swoje kosztowności. Odczuwasz zmianę kierunku lotu. Widocznie zastraszony kapitan zaczął już zmieniać kurs."/>
+        <Button
+            android:layout_below="@id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Nie możesz patrzeć na to bezczynnie. Wyjmując z pochwy miecz najemnika rzucasz się na porywaczy."
+            android:id="@+id/gra_atak_1_a"
+            />
+            <Button
+                android:text="2. Zważając na ryzyko niepostrzeżenie sięgasz po sztylet i próbujesz rzucić w zamachowca trzymającego kobietę."
+                android:layout_below="@id/gra_atak_1_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gra_atak_1_b"
+                />
+            <Button
+                android:text="3. Aby uniknąć rozlewu krwi podejmujesz próbę negocjacji."
+                android:layout_below="@id/gra_atak_1_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gra_atak_1_c"
+                />
+            <Button
+                android:text="4. Wycofujesz się ukradkiem przez uchylone za tobą drzwi."
+                android:layout_below="@id/gra_atak_1_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gra_atak_1_d"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
 </RelativeLayout>
