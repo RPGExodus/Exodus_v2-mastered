@@ -7,13 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.gra_atak_najemnik">
+    tools:context="pl.billog_studio.exodus.gra_atak_kobieta">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NAJEMNIK"
-        android:id="@+id/textView22"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KOBIETA"
+        android:id="@+id/textView21"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

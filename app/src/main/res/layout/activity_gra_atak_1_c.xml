@@ -43,7 +43,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="<Dając znak do działania najemnikowi>. Drodzy panowie... z pewnością jest jakiś inny sposób by rozwiązać zaistniałą sytuację... Spójrzmy prawdzie w oczy. Jest was jedynie dwóch. Sprawiacie wrażenie zdesperowanych jeżeli porywacie się na takie... że tak powiem ekscesy. Nie będziecie chyba okradali tych pokrzywdzonych ludzi? Naprawdę tak trudno teraz w waszym fachu o... "
+        android:text=" (Dając znak do działania najemnikowi). Drodzy panowie... z pewnością jest jakiś inny sposób by rozwiązać zaistniałą sytuację... Spójrzmy prawdzie w oczy. Jest was jedynie dwóch. Sprawiacie wrażenie zdesperowanych jeżeli porywacie się na takie... że tak powiem ekscesy. Nie będziecie chyba okradali tych pokrzywdzonych ludzi? Naprawdę tak trudno teraz w waszym fachu o..."
         android:id="@+id/gra_atak_2_b"
         android:layout_below="@+id/gra_atak_2_a"
         android:layout_centerHorizontal="true" />

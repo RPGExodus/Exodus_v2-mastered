@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 public class Gra_1 extends AppCompatActivity {
+    public void onBackPressed()
+    {
 
+        //thats it
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,9 +1,9 @@
 package pl.billog_studio.exodus;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Ustawienia extends Activity {
+public class gra_atak_kobieta extends AppCompatActivity {
     public void onBackPressed()
     {
 
@@ -12,6 +12,6 @@ public class Ustawienia extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ustawienia);
+        setContentView(R.layout.activity_gra_atak_kobieta);
     }
 }

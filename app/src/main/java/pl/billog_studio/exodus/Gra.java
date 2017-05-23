@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 public class Gra extends AppCompatActivity {
+    public void onBackPressed()
+    {
+
+        //thats it
+    }
     int count=0;
 
     @Override

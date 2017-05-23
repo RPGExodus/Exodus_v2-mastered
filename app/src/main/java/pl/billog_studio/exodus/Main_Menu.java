@@ -10,7 +10,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class Main_Menu extends AppCompatActivity {
+    public void onBackPressed()
+    {
 
+        //thats it
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
