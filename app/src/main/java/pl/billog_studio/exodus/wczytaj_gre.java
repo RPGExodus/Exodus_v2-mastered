@@ -25,7 +25,7 @@ public class wczytaj_gre extends Activity {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            Intent next=new Intent(wczytaj_gre.this,Class.forName(Wszystko.lokacja));
+            Intent next=new Intent(wczytaj_gre.this, Class.forName(Wszystko.lokacja));
             startActivity(next);
             finish();
         } catch (ClassNotFoundException e) {

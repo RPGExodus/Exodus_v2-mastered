@@ -22,8 +22,10 @@ public class gra_nowy_dzien extends AppCompatActivity {
         setContentView(R.layout.activity_gra_nowy_dzien);
 
         try {
-            Wszystko.saveTheGame();
+
             Quests.STATEK.edit(true,false);
+            Wszystko.lokacja=this.getClass().getName();
+            Wszystko.saveTheGame();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 
 import Gra.*;
@@ -23,7 +24,9 @@ public class Main_Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-
+        Wszystko.zapis=new File(getApplicationContext().getFilesDir(),"save");
+        Wszystko.questy=new File(getApplicationContext().getFilesDir(),"quests");
+        Wszystko.lok=new File(getApplicationContext().getFilesDir(),"location");
 
         this.setContentView(R.layout.activity_main__menu);
         final Button button = (Button)findViewById(R.id.button_nowa_gra); //Button od nowej gry
@@ -32,6 +35,7 @@ public class Main_Menu extends AppCompatActivity {
                 Intent intent = new Intent(Main_Menu.this, Gra.class);
                 startActivity(intent);
                 Wszystko.player=new Player();
+                Wszystko.lokacja=Gra.class.getName();
                 try {
                     Wszystko.saveTheGame();
                 } catch (FileNotFoundException e) {

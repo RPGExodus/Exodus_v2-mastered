@@ -118,15 +118,22 @@ public class Player {
         String dane=this.getStrenght()+"\n"+this.getDextirity()+"\n"+this.getIntelligence()+"\n"+this.getFood()+"\n"+this.getSleep()+"\n"
                 +this.getPeste()+"\n"+this.getGold()+"\n";
         for(Itemss a:this.equipmnent){
-            dane+=a.getID();
+            if(a !=null)
+                dane+=a.getID();
+            else
+                dane+="null";
             dane+="\n";
         }
         for(Abillitiess a:this.abillities){
-            dane+=a.getID();
+            if(a!=null)dane+=a.getID();
+            else
+                dane+="null";
             dane+="\n";
         }
         for(Companions a:this.team){
-            dane+=a.getID();
+            if(a!=null)dane+=a.getID();
+            else
+                dane+="null";
             dane+="\n";
         }
         return dane;
