@@ -8,17 +8,25 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import Gra.*;
 
 public class gra_shop extends AppCompatActivity {
 
+    Handlarz sprzedajnaKurwa;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gra_shop);
+        // Handlarz.STATEK.HANDLARZ
+        sprzedajnaKurwa=(Handlarz)getIntent().getExtras().get("Handlarz");
         LinearLayout lin=(LinearLayout) findViewById(R.id.STATEK_HADLARZ_LINEAR);
-        for(final Itemss it: Handlarz.STATEK_HANDLARZ.itemy){
+        TextView txv= new TextView(this);
+        txv.setText(String.valueOf(Wszystko.player.getGold()));
+        lin.addView(txv);
+        for(final Itemss it: sprzedajnaKurwa.itemy){
             Button btn=new Button(this);
             String txt="";
             txt+=it.nazwa+"\n"+it.opis+"\n"+"Cena: "+it.cena;
@@ -32,6 +40,8 @@ public class gra_shop extends AppCompatActivity {
             });
             lin.addView(btn);
         }
+
+
 
     }
 }
