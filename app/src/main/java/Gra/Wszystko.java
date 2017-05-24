@@ -10,8 +10,10 @@ import java.io.PrintWriter;
 public class Wszystko {
     public static Player player;
 
-    public void saveTheGame() throws FileNotFoundException {
+    public static void saveTheGame() throws FileNotFoundException {
         File zapis=new File("save");
+        File questy=new File("quests");
         new PrintWriter(zapis).write(player.getAllData());
+        new PrintWriter(questy).write(Quests.exportDane());
     }
 }

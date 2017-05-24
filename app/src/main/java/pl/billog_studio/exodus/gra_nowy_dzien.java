@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.FileNotFoundException;
+
+import Gra.*;
+
 public class gra_nowy_dzien extends AppCompatActivity {
     public void onBackPressed()
     {
@@ -16,6 +20,14 @@ public class gra_nowy_dzien extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gra_nowy_dzien);
+
+        try {
+            Wszystko.saveTheGame();
+            Quests.STATEK.edit(true,false);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
         final Button button2 = (Button)findViewById(R.id.button_to_shop);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
