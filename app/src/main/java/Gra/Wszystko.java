@@ -9,6 +9,7 @@ import java.io.PrintWriter;
  */
 public class Wszystko {
     public static Player player;
+    public static String lokacja="pl.billog_studio.exodus.gra_atak";
 
     public static void saveTheGame() throws FileNotFoundException {
         File zapis=new File("save");
