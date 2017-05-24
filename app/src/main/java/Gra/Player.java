@@ -63,8 +63,8 @@ public class Player {
         strenght = 0;
         dextirity =0;
         intelligence =0;
-        food= 100;
-        sleep = 100;
+        food= 0;
+        sleep = 0;
         peste =0;
         gold =0;
         equipmnent = new Itemss[100];
@@ -158,5 +158,37 @@ public class Player {
             team[i]=Companions.get(in.next());
         }
 
+    }
+
+    public String getStatystyki(){
+        String wyn="";
+        wyn+= String.format("Siła = %d%n", this.strenght);
+        wyn+= String.format("Zręczność = %d%n",this.dextirity);
+        wyn+= String.format("Inteligencja = %d%n",this.intelligence);
+        wyn+= String.format("Głód = %d%n",this.food);
+        wyn+= String.format("Zmęczenie = %d%n", this.sleep);
+        wyn+= String.format("Choroba = %d",this.peste);
+        return wyn;
+    }
+    public String getItems(){
+        String wyn="";
+        for (Itemss it:equipmnent){
+            if(it !=Itemss.MissingNO){
+                wyn+=it.nazwa+" : "+it.opis+". "+"Cena: "+it.cena+"\n";
+            }
+        }
+        wyn+=Itemss.MissingNO.nazwa+" : "+Itemss.MissingNO.opis+". "+"Cena: "+Itemss.MissingNO.cena;
+        return wyn;
+    }
+    public String getAbilities(){
+        String wyn="";
+        for(Abillitiess ab:abillities){
+            if(ab !=Abillitiess.MissingNO){
+                wyn+=ab.nazwa;
+                wyn+="\n";
+            }
+        }
+        wyn+=Abillitiess.MissingNO.nazwa;
+        return wyn;
     }
 }
