@@ -11,6 +11,9 @@ import android.widget.Button;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
 import Gra.*;
 
@@ -24,10 +27,19 @@ public class Main_Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        System.out.println(Arrays.toString(getFilesDir().listFiles()));
         Wszystko.zapis=new File(getApplicationContext().getFilesDir(),"save");
         Wszystko.questy=new File(getApplicationContext().getFilesDir(),"quests");
         Wszystko.lok=new File(getApplicationContext().getFilesDir(),"location");
 
+        try {
+            Scanner sc=new Scanner(Wszystko.zapis);
+            while(sc.hasNext()){
+                System.out.println(sc.next());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         this.setContentView(R.layout.activity_main__menu);
         final Button button = (Button)findViewById(R.id.button_nowa_gra); //Button od nowej gry
         button.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +51,8 @@ public class Main_Menu extends AppCompatActivity {
                 try {
                     Wszystko.saveTheGame();
                 } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
                 finish();

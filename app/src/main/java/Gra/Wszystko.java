@@ -1,7 +1,11 @@
 package Gra;
 
+import android.content.Context;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -15,10 +19,11 @@ public class Wszystko {
     public static File zapis;
     public static File questy;
     public static File lok;
-    public static void saveTheGame() throws FileNotFoundException {
-        new PrintWriter(zapis).write(player.getAllData());
-        new PrintWriter(questy).write(Quests.exportDane());
-        new PrintWriter(lok).write(lokacja);
+    public static void saveTheGame() throws IOException {
+
+        new FileOutputStream(zapis).write(player.getAllData().getBytes());
+        new FileOutputStream(questy).write(Quests.exportDane().getBytes());
+        new FileOutputStream(lok).write(lokacja.getBytes());
     }
     public static void wczytajGrę() throws FileNotFoundException {
         player.wczytajDane(zapis);

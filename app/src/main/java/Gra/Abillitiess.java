@@ -4,11 +4,14 @@ package Gra;
  * Created by Raver on 2017-05-23.
  */
 public enum Abillitiess {
-    MissingNO;
+    MissingNO("0");
 
     String id;
     public String getID() {
         return id;
+    }
+    Abillitiess(String id){
+        this.id=id;
     }
 
     public static Gra.Abillitiess get(String id) {

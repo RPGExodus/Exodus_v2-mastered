@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import Gra.*;
 
@@ -27,6 +28,8 @@ public class gra_nowy_dzien extends AppCompatActivity {
             Wszystko.lokacja=this.getClass().getName();
             Wszystko.saveTheGame();
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -49,4 +52,6 @@ public class gra_nowy_dzien extends AppCompatActivity {
 
         });
     }
+
+
 }
