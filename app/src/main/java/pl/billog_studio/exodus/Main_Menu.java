@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+
+import java.io.FileNotFoundException;
+
 import Gra.*;
 
 public class Main_Menu extends AppCompatActivity {
@@ -29,6 +32,11 @@ public class Main_Menu extends AppCompatActivity {
                 Intent intent = new Intent(Main_Menu.this, Gra.class);
                 startActivity(intent);
                 Wszystko.player=new Player();
+                try {
+                    Wszystko.saveTheGame();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
                 finish();
             }
         });

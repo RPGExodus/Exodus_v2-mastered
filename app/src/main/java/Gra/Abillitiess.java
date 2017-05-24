@@ -3,8 +3,20 @@ package Gra;
 /**
  * Created by Raver on 2017-05-23.
  */
-public class Abillitiess {
+public enum Abillitiess {
+    MissingNO;
 
-    public static Abillitiess forName(String next) {
+    String id;
+    public String getID() {
+        return id;
+    }
+
+    public static Gra.Abillitiess get(String id) {
+        for(Abillitiess abil:Abillitiess.values()){
+            if(abil.id.equals(id)){
+                return abil;
+            }
+        }
+        return MissingNO;
     }
 }

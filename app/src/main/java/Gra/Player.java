@@ -118,15 +118,15 @@ public class Player {
         String dane=this.getStrenght()+"\n"+this.getDextirity()+"\n"+this.getIntelligence()+"\n"+this.getFood()+"\n"+this.getSleep()+"\n"
                 +this.getPeste()+"\n"+this.getGold()+"\n";
         for(Itemss a:this.equipmnent){
-            dane+=a.toString();
+            dane+=a.getID();
             dane+="\n";
         }
         for(Abillitiess a:this.abillities){
-            dane+=a.toString();
+            dane+=a.getID();
             dane+="\n";
         }
         for(Companions a:this.team){
-            dane+=a.toString();
+            dane+=a.getID();
             dane+="\n";
         }
         return dane;
@@ -142,13 +142,13 @@ public class Player {
         setPeste(in.nextInt());
         setGold(in.nextInt());
         for(int i=0;i<equipmnent.length;i++){
-            equipmnent[i]=Itemss.forName(in.next());
+            equipmnent[i]=Itemss.get(in.next());
         }
         for(int i=0;i<abillities.length;i++){
-            abillities[i]=Abillitiess.forName(in.next());
+            abillities[i]=Abillitiess.get(in.next());
         }
         for (int i=0;i<team.length;i++){
-            team[i]=Companions.forName(in.next());
+            team[i]=Companions.get(in.next());
         }
 
     }
