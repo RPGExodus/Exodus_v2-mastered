@@ -29,7 +29,7 @@ public class wczytaj_gre extends Activity {
             Intent next=new Intent(wczytaj_gre.this, Class.forName(Wszystko.lokacja));
 
             startActivity(next);
-            startActivity(staty);
+            //startActivity(staty);
             finish();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
