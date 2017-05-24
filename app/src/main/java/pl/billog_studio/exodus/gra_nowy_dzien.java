@@ -36,6 +36,8 @@ public class gra_nowy_dzien extends AppCompatActivity {
         final Button button2 = (Button)findViewById(R.id.button_to_shop);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Intent intent2 = new Intent(gra_nowy_dzien.this, gra_port.class);
+                startActivity(intent2);
                 Intent intent = new Intent(gra_nowy_dzien.this, gra_shop.class);
                 intent.putExtra("Handlarz",Handlarz.STATEK_HANDLARZ);
                 startActivity(intent);
