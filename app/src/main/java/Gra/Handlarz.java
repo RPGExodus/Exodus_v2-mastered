@@ -13,7 +13,7 @@ public enum Handlarz {
     });
 
 
-    Itemss[] itemy;
+    public Itemss[] itemy;
 
     Handlarz(Itemss[] itemy){
         this.itemy=itemy;

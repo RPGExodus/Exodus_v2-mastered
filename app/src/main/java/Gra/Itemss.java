@@ -10,9 +10,9 @@ public enum Itemss {
     ;
 
     String id;
-    String nazwa;
-    int cena;
-    String opis;
+    public String nazwa;
+    public int cena;
+    public String opis;
     int ilość;
 
     public String getID() {
