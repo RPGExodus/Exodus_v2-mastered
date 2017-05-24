@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.billog_studio.exodus.gra_nowy_dzien">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scrollView4"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:textSize="18sp"
+                android:paddingBottom="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Budzisz się następnego dnia. Zatłoczeni na statku ludzie widocznie przygotowują się do wyjścia na ląd. Wyglądasz przez okno i widzisz brukowane ulice miasta. Mimo wczesnej pory gdzieniegdzie widać już mieszkańców. Brama sterowca otwiera się. Zanim ktokolwiek opuszcza statek na pokład wchodzi oddział halabardników. Jeden z nich podchodzi do ciebie."
+                android:id="@+id/textView1"
+                />
+            <TextView
+                android:paddingBottom="35dp"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                android:textColor="#EF5350"
+                android:textSize="18sp"
+                android:id="@+id/textView2"
+                android:layout_below="@id/textView1"
+
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strażnik miejski: Podobno pomogłeś w złapaniu tych dwóch. Szlag by ich trafił. Niestety należą do większej organizacji. Cały czas pracujemy nad jej rozbiciem. Niemniej należy ci się nagroda. Załatwmy to szybko. Proszę oto pieniądze i pokwitowanie. Za pomoc w ujęciu każdego z nich rada miasta Pest przeznacza 50 srebrnych. Proszę o podpis."/>
+            <Button
+                android:layout_below="@id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Podpisz pokwitowanie, zabierz pieniądze i udaj się do pokładowego kupca"
+                android:id="@+id/button_to_shop"
+                />
+
+            <Button
+                android:layout_below="@id/button_to_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Podpisz pokwitowanie, zabierz pieniądze i wyjdź ze statku."
+                android:id="@+id/button_to_port"
+            />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

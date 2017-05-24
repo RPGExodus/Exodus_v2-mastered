@@ -25,6 +25,7 @@ public class gra_atak_kobieta_b extends AppCompatActivity {
                 Intent intent = new Intent(gra_atak_kobieta_b.this, gra_atak_kobieta.class);
                 startActivity(intent);
                 Wszystko.player.setIntelligence(Wszystko.player.getIntelligence()+1);
+                finish();
             }
         });
     }

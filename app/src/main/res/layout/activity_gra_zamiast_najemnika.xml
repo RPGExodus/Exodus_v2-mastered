@@ -7,31 +7,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.billog_studio.exodus.gra_atak_1_d">
-
+    tools:context="pl.billog_studio.exodus.gra_zamiast_najemnika">
     <TextView
         android:textSize="18sp"
         android:paddingBottom="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pomieszczenie okazuje się być maszynownią. Nie znasz się na zasadach działania sterowca, ale widzisz, że ktoś niedawno majstrował przy obciążeniu statku. Bez trudu rozpoznajesz możliwości maszyny."
-        android:id="@+id/textView20"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Na drodze staje ci porywacz. Udaje ci się co prawda wybić mu z ręki szablę, ale drugi w gniewie podżyna kobiecie kardło. Fontanna krwi tryska na przerażonych ludzi. Najemnik wykorzystuje zamieszanie i obezwładnia zaskoczonego porywacza."
+        android:id="@+id/textView13"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wyrzuć obciążenie po jednej burcie."
-        android:id="@+id/gra_atak_3b_dalej"
-        android:layout_below="@+id/textView20"
+        android:text="Dalej"
+        android:id="@+id/gra_atak_1_dalej"
+        android:layout_below="@+id/textView13"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wyrzuć obciążenie po obu burtach."
-        android:id="@+id/gra_atak_3x_dalej"
-        android:layout_below="@+id/gra_atak_3b_dalej"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -21,14 +21,18 @@ public class gra_atak_najemnik extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_najemnik.this, gra_atak_najemnik_b.class);
                 startActivity(intent);
+                finish();
             }
         });
         final Button button2 = (Button)findViewById(R.id.gra_najemnik_button_b);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_najemnik.this, gra_atak_najemnik_a.class);
-                startActivity(intent);}
+                startActivity(intent);
+                finish();
+            }
 
         });
+
     }
 }

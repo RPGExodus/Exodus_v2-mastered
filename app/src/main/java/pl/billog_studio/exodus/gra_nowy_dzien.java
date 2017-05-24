@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class gra_atak_1_c extends AppCompatActivity {
+public class gra_nowy_dzien extends AppCompatActivity {
     public void onBackPressed()
     {
 
@@ -15,22 +15,24 @@ public class gra_atak_1_c extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gra_atak_1_c);
-        final Button button = (Button)findViewById(R.id.gra_atak_2_a);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(gra_atak_1_c.this, gra_atak_1_2c.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        final Button button2 = (Button)findViewById(R.id.gra_atak_2_b);
+        setContentView(R.layout.activity_gra_nowy_dzien);
+        final Button button2 = (Button)findViewById(R.id.button_to_shop);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(gra_atak_1_c.this, gra_atak_1_3c.class);
+                Intent intent = new Intent(gra_nowy_dzien.this, gra_shop.class);
                 startActivity(intent);
                 finish();
             }
+
+        });
+        final Button button3 = (Button)findViewById(R.id.button_to_port);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(gra_nowy_dzien.this, gra_port.class);
+                startActivity(intent);
+                finish();
+            }
+
         });
     }
 }

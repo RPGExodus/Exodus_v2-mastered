@@ -23,7 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dalej"
-        android:id="@+id/gra_atak_1_2_d_button"
+        android:id="@+id/button_przejdz_kurwa_dalej"
         android:layout_below="@+id/textView29"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

@@ -23,6 +23,7 @@ public class gra_atak_1_b extends AppCompatActivity {
                 Intent intent = new Intent(gra_atak_1_b.this, gra_atak_najemnik.class);
                 startActivity(intent);
                 Wszystko.player.setDextirity(Wszystko.player.getDextirity()+1);
+                finish();
             }
         });
     }

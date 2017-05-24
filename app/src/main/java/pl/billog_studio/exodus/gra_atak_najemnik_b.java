@@ -21,6 +21,7 @@ public class gra_atak_najemnik_b extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_najemnik_b.this, gra_end.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

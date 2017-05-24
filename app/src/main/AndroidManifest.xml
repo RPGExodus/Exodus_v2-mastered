@@ -37,7 +37,11 @@
         <activity android:name=".gra_atak_najemnik_a" />
         <activity android:name=".gra_end" />
         <activity android:name=".gra_atak_najemnik_b" />
-        <activity android:name=".gra_atak_1_2_d"></activity>
+        <activity android:name=".gra_atak_1_2_d" />
+        <activity android:name=".gra_zamiast_najemnika" />
+        <activity android:name=".gra_nowy_dzien" />
+        <activity android:name=".gra_shop" />
+        <activity android:name=".gra_port"></activity>
     </application>
 
 </manifest>

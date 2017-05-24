@@ -17,13 +17,15 @@ public class gra_atak_1_a extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gra_atak_1_a);
-        final Button button = (Button)findViewById(R.id.gra_atak_1_dalej);
+        final Button button7 = (Button)findViewById(R.id.gra_atak_1_dalej);
 
-        button.setOnClickListener(new View.OnClickListener() {
+
+        button7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_1_a.this, gra_atak_najemnik.class);
                 startActivity(intent);
-                Wszystko.player.setStrenght(Wszystko.player.getStrenght()+1); // strength ++
+               Wszystko.player.setStrenght(Wszystko.player.getStrenght()+1); // strength ++
+                finish();
             }
         });
     }

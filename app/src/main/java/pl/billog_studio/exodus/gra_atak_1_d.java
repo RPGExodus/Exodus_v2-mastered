@@ -16,18 +16,20 @@ public class gra_atak_1_d extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gra_atak_1_d);
-        final Button button = (Button)findViewById(R.id.gra_atak_3_dalej);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(gra_atak_1_d.this, gra_atak_najemnik.class);
-                startActivity(intent);
-            }
-        });
+       final Button button11 = (Button)findViewById(R.id.gra_atak_3x_dalej);
+        button11.setOnClickListener(new View.OnClickListener() {
+           public void onClick(View v) {
+              Intent intent = new Intent(gra_atak_1_d.this, gra_atak_1_2_d.class);
+              startActivity(intent);
+               finish();
+           }
+       });
         final Button button2 = (Button)findViewById(R.id.gra_atak_3b_dalej);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_1_d.this, gra_atak_kobieta_b.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

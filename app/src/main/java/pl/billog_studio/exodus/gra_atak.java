@@ -21,6 +21,7 @@ public class gra_atak extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak.this, gra_atak_1_a.class);
                 startActivity(intent);
+                finish();
             }
         });
         final Button button2 = (Button)findViewById(R.id.gra_atak_1_b);
@@ -28,6 +29,7 @@ public class gra_atak extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak.this, gra_atak_1_b.class);
                 startActivity(intent);
+                finish();
             }
         });
         final Button button3 = (Button)findViewById(R.id.gra_atak_1_c);
@@ -35,6 +37,7 @@ public class gra_atak extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak.this, gra_atak_1_c.class);
                 startActivity(intent);
+                finish();
             }
         });
         final Button button4 = (Button)findViewById(R.id.gra_atak_1_d);
@@ -42,6 +45,7 @@ public class gra_atak extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak.this, gra_atak_1_d.class);
                 startActivity(intent);
+                finish();
             }
         });
 

@@ -21,6 +21,7 @@ public class gra_atak_1_3c extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_atak_1_3c.this, gra_atak_kobieta_a.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

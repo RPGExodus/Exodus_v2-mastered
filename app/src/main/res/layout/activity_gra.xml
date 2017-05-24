@@ -26,7 +26,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Budzisz się. Leżysz na czymś twardym. Widzisz drewniany sufit. Z początku niewielki ból głowy narasta , promieniuje na całe ciało. Nie wiesz jak się tu znalazłeś. Odwracasz głowę. Tu i ówdzie widzisz matki siedzące z dziećmi na prowizorycznych bagażach. Mężczyźni zebrani w grupach dyskutują o czymś bardzo żywiołowo. Napięcie wyczuwalne w powietrzu wskazuje, że obecna gawiedź nie znalazła się tu ani przypadkowo, ani dobrowolnie."
                 android:id="@+id/textView5"
-/>
+                />
             <TextView
                 android:paddingBottom="35dp"
                 android:paddingLeft="5dp"
