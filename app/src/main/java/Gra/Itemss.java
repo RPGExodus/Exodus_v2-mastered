@@ -13,7 +13,7 @@ public enum Itemss {
     public String nazwa;
     public int cena;
     public String opis;
-    int ilość;
+    public int ilość;
 
     public String getID() {
         return id;
@@ -53,5 +53,23 @@ public enum Itemss {
             }
             this.ilość++;
         }
+    }
+
+    public void sell() {
+        if(this.ilość>0){
+            Wszystko.player.setGold(Wszystko.player.getGold()+this.cena);
+            this.ilość--;
+            if(ilość==0){
+                for(Itemss it:Wszystko.player.equipmnent){
+                    if(it==this){
+                        it=MissingNO;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    public String dane(){
+        return String.valueOf(this.nazwa+"\n"+this.opis+"\n"+"Cena: "+this.cena+"\nIlość: "+this.ilość);
     }
 }

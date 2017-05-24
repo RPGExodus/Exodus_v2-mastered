@@ -16,6 +16,7 @@ import Gra.*;
 public class gra_shop extends AppCompatActivity {
 
     Handlarz sprzedajnaKurwa;
+    LinearLayout lin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,9 @@ public class gra_shop extends AppCompatActivity {
         setContentView(R.layout.activity_gra_shop);
         // Handlarz.STATEK.HANDLARZ
         sprzedajnaKurwa=(Handlarz)getIntent().getExtras().get("Handlarz");
-        LinearLayout lin=(LinearLayout) findViewById(R.id.STATEK_HADLARZ_LINEAR);
+        lin=(LinearLayout) findViewById(R.id.STATEK_HADLARZ_LINEAR);
+    }
+    public void kup(){
         final TextView txv= new TextView(this);
         txv.setTextSize(18);
         txv.setText("Twoje fundusze: "+String.valueOf(Wszystko.player.getGold()));
@@ -38,11 +41,38 @@ public class gra_shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     it.purchase();
-                    txv.setText("Twoje fundusze: "+String.valueOf(Wszystko.player.getGold()));
+                    onResume();
                 }
             });
             lin.addView(btn);
         }
+    }
+    public void sprzedaj(){
+        final TextView txv_2= new TextView(this);
+        txv_2.setTextSize(18);
+        txv_2.setText("Twoje itemy");
+        lin.addView(txv_2);
+        for(final Itemss it:Wszystko.player.getEquipmnent()){
+            if(it == Itemss.MissingNO)
+                continue;
+            final Button btn=new Button(this);
+            btn.setText(it.dane());
+            btn.setOnClickListener(new Button.OnClickListener(){
+
+                @Override
+                public void onClick(View view) {
+                    it.sell();
+                    onResume();
+                }
+            });
+            lin.addView(btn);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        kup();
         final Button wyjdz = (Button)findViewById(R.id.STATEK_HANDLARZ_POWRÓT);
         wyjdz.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -50,7 +80,6 @@ public class gra_shop extends AppCompatActivity {
             }
 
         });
-
-
+        sprzedaj();
     }
 }
