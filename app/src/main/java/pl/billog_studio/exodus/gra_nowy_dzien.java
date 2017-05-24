@@ -27,6 +27,7 @@ public class gra_nowy_dzien extends AppCompatActivity {
             Quests.STATEK.edit(true,false);
             Wszystko.lokacja=this.getClass().getName();
             Wszystko.saveTheGame();
+            Wszystko.player.setGold(Wszystko.player.getGold()+50);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

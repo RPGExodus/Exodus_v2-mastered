@@ -24,7 +24,7 @@ public class gra_shop extends AppCompatActivity {
         // Handlarz.STATEK.HANDLARZ
         sprzedajnaKurwa=(Handlarz)getIntent().getExtras().get("Handlarz");
         LinearLayout lin=(LinearLayout) findViewById(R.id.STATEK_HADLARZ_LINEAR);
-        TextView txv= new TextView(this);
+        final TextView txv= new TextView(this);
         txv.setTextSize(18);
         txv.setText("Twoje fundusze: "+String.valueOf(Wszystko.player.getGold()));
         lin.addView(txv);
@@ -38,6 +38,7 @@ public class gra_shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     it.purchase();
+                    txv.setText("Twoje fundusze: "+String.valueOf(Wszystko.player.getGold()));
                 }
             });
             lin.addView(btn);
