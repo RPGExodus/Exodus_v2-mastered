@@ -5,4 +5,6 @@ package Gra;
  */
 public class Abillitiess {
 
+    public static Abillitiess forName(String next) {
+    }
 }

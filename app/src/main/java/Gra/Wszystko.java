@@ -17,4 +17,10 @@ public class Wszystko {
         new PrintWriter(zapis).write(player.getAllData());
         new PrintWriter(questy).write(Quests.exportDane());
     }
+    public static void wczytajGrę() throws FileNotFoundException {
+        File zapis=new File("zapis");
+        File questy=new File("quests");
+        player.wczytajDane(zapis);
+        Quests.importDane(questy);
+    }
 }

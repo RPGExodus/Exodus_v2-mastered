@@ -1,6 +1,10 @@
 package Gra;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Player {
     int strenght;
     int dextirity;
@@ -111,19 +115,41 @@ public class Player {
 
 
     public String getAllData(){
-        String dane=this.getStrenght()+";"+this.getDextirity()+";"+this.getIntelligence()+";"+this.getFood()+";"+this.getSleep()+";"+this.getPeste()+";"+this.getGold()+";";
+        String dane=this.getStrenght()+"\n"+this.getDextirity()+"\n"+this.getIntelligence()+"\n"+this.getFood()+"\n"+this.getSleep()+"\n"
+                +this.getPeste()+"\n"+this.getGold()+"\n";
         for(Itemss a:this.equipmnent){
             dane+=a.toString();
-            dane+=";";
+            dane+="\n";
         }
         for(Abillitiess a:this.abillities){
             dane+=a.toString();
-            dane+=";";
+            dane+="\n";
         }
         for(Companions a:this.team){
             dane+=a.toString();
-            dane+=";";
+            dane+="\n";
         }
         return dane;
+    }
+
+    public void wczytajDane(File dane) throws FileNotFoundException {
+        Scanner in=new Scanner(dane);
+        setStrenght(in.nextInt());
+        setDextirity(in.nextInt());
+        setIntelligence(in.nextInt());
+        setFood(in.nextInt());
+        setSleep(in.nextInt());
+        setPeste(in.nextInt());
+        setGold(in.nextInt());
+        for(int i=0;i<equipmnent.length;i++){
+            equipmnent[i]=Itemss.forName(in.next());
+        }
+        for(int i=0;i<abillities.length;i++){
+            abillities[i]=Abillitiess.forName(in.next());
+        }
+        for (int i=0;i<team.length;i++){
+            team[i]=Companions.forName(in.next());
+        }
+
     }
 }

@@ -23,9 +23,9 @@ public enum Quests {
         String dane="";
         for(Quests q:Quests.values()){
             dane+=(q.completed==false)?0:1;
-            dane+=',';
+            dane+=' ';
             dane+=(q.available==false)?0:1;
-            dane+=';';
+            dane+='\n';
         }
         return dane;
     }
