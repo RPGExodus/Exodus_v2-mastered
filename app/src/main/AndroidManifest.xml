@@ -41,7 +41,8 @@
         <activity android:name=".gra_zamiast_najemnika" />
         <activity android:name=".gra_nowy_dzien" />
         <activity android:name=".gra_shop" />
-        <activity android:name=".gra_port"></activity>
+        <activity android:name=".gra_port" />
+        <activity android:name=".Gracz_Statystyki"></activity>
     </application>
 
 </manifest>
