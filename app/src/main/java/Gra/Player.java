@@ -14,7 +14,7 @@ public class Player {
     int peste;
     int gold;
     Itemss[] equipmnent;
-    private Itemss[] założone;
+    public Itemss[] założone = new Itemss[4];
     Abillitiess[] abillities;
     Companions[] team;
 
@@ -194,13 +194,78 @@ public class Player {
     public void załóż(int id_w_eq){
         switch (equipmnent[id_w_eq].rdzj){
             case MIECZ:{
+                Itemss pom = założone[0];
+                pom.zdejmij();
                 if(equipmnent[id_w_eq].czySpełniaWarunki()) {
-                    Itemss pom = założone[0];
-                    pom.zdejmij();
+
                     założone[0] = equipmnent[id_w_eq];
                     założone[0].załóż(1);
                     equipmnent[id_w_eq] = pom;
                 }
+                else
+                {
+                    pom.załóż(1);
+                }
+                break;
+            }
+            case LUK: {
+                Itemss pom = założone[0];
+                pom.zdejmij();
+                if (equipmnent[id_w_eq].czySpełniaWarunki()) {
+
+                    założone[1] = equipmnent[id_w_eq];
+                    założone[1].załóż(1);
+                    equipmnent[id_w_eq] = pom;
+                } else {
+                    pom.załóż(1);
+                }
+                break;
+            }
+            case ZBROJA: {
+                Itemss pom = założone[0];
+                pom.zdejmij();
+                if (equipmnent[id_w_eq].czySpełniaWarunki()) {
+
+                    założone[2] = equipmnent[id_w_eq];
+                    założone[2].załóż(1);
+                    equipmnent[id_w_eq] = pom;
+                } else {
+                    pom.załóż(1);
+                }
+                break;
+            }
+            case TARCZA: {
+                Itemss pom = założone[0];
+                pom.zdejmij();
+                if (equipmnent[id_w_eq].czySpełniaWarunki()) {
+
+                    założone[3] = equipmnent[id_w_eq];
+                    założone[3].załóż(1);
+                    equipmnent[id_w_eq] = pom;
+                } else {
+                    pom.załóż(1);
+                }
+                break;
+            }
+            case UŻYTKOWY:
+            {
+                if(equipmnent[id_w_eq].czySpełniaWarunki())
+                {
+                    equipmnent[id_w_eq].załóż(1);
+                    equipmnent[id_w_eq].ilość--;
+                    if(equipmnent[id_w_eq].ilość==0) {
+                        equipmnent[id_w_eq]=Itemss.MissingNO;
+
+                }
+                }
+                break;
+            }
+            case QUEST:{
+                break;
+            }
+            case INNE:
+            {
+                break;
             }
         }
     }

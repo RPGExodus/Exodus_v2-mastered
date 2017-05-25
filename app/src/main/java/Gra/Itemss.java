@@ -7,15 +7,22 @@ import java.util.function.Function;
  * Created by Raver on 2017-05-23.
  */
 public enum Itemss {
-    MissingNO("0","MISSING ITEM",0,"W sumie item do debugowania.",0,0,0,0,0,0),
-    Pożywienie("1","Pożywienie",10,"Redukuje głod o 20.",0,0,0,20,0,0),
-    Miecz("2","Prosty Miecz",50,"Zwykły miecz, nic specjalnego.",5,0,0,0,0,0)
+    MissingNO("0","MISSING ITEM",0,"W sumie item do debugowania.",0,0,0,0,0,0,0,0,0,Rodzaj.TARCZA),
+    Pożywienie("1","Pożywienie",10,"Redukuje głod o 20.",0,0,0,20,0,0,0,0,0, Rodzaj.UŻYTKOWY),
+    Miecz("2","Prosty Miecz",50,"Zwykły miecz, nic specjalnego.",5,0,0,0,0,0,1,0,0,Rodzaj.MIECZ),
+    ZardzewiałyMiecz("3","Zardzewiały Miecz",1,"Bardzo stary, lekko zardzewiały miecz.",0,0,0,0,0,0,0,0,0,Rodzaj.MIECZ),
+    SpruchniałyLuk("4","Spruchniały Łuk",1,"Bardzo stary, spruchniały łuk.",0,0,0,0,0,0,0,0,0,Rodzaj.LUK),
+    StareUbranie("5","Stare Ubranie",1,"Stare podarte ciuchy",0,0,0,0,0,0,0,0,0,Rodzaj.ZBROJA),
+
     ;
 
     String id;
     public String nazwa;
     public int cena;
     public String opis;
+    public int wymagania_str;
+    public int wymagania_dex;
+    public int wymagania_int;
     public int ilość;
     public int str;
     public int dex;
@@ -28,7 +35,7 @@ public enum Itemss {
     public String getID() {
         return id;
     }
-    Itemss(String id, String nazwa, int cena, String opis, int str, int dex, int inta, int food, int sleep, int peste){
+    Itemss(String id, String nazwa, int cena, String opis, int str, int dex, int inta, int food, int sleep, int peste, int wymagania_str, int wymagania_dex, int wymagania_int, Rodzaj rdzj){
         this.id=id;
         this.nazwa=nazwa;
         this.cena=cena;
@@ -40,6 +47,10 @@ public enum Itemss {
         this.sleep=sleep;
         this.peste=peste;
         ilość=0;
+        this.wymagania_str= wymagania_str;
+        this.wymagania_dex= wymagania_dex;
+        this.wymagania_int= wymagania_int;
+        this.rdzj=rdzj;
     }
 
     public static Gra.Itemss get(String next) {
@@ -97,19 +108,31 @@ public enum Itemss {
     public void załóż(int i) {
         switch (rdzj){
             case MIECZ:{
-                
+                Wszystko.player.setStrenght(Wszystko.player.getStrenght()+i*this.str);
+                Wszystko.player.setDextirity(Wszystko.player.getDextirity()+i*this.dex);
+                Wszystko.player.setIntelligence(Wszystko.player.getIntelligence()+i*this.inta);
+                break;
             }
             case LUK:{
-                
+                Wszystko.player.setStrenght(Wszystko.player.getStrenght()+i*this.str);
+                Wszystko.player.setDextirity(Wszystko.player.getDextirity()+i*this.dex);
+                Wszystko.player.setIntelligence(Wszystko.player.getIntelligence()+i*this.inta);
+                break;
             }
             case UŻYTKOWY:{
                 
             }
             case ZBROJA:{
-                
+                Wszystko.player.setStrenght(Wszystko.player.getStrenght()+i*this.str);
+                Wszystko.player.setDextirity(Wszystko.player.getDextirity()+i*this.dex);
+                Wszystko.player.setIntelligence(Wszystko.player.getIntelligence()+i*this.inta);
+                break;
             }
             case TARCZA:{
-                
+                Wszystko.player.setStrenght(Wszystko.player.getStrenght()+i*this.str);
+                Wszystko.player.setDextirity(Wszystko.player.getDextirity()+i*this.dex);
+                Wszystko.player.setIntelligence(Wszystko.player.getIntelligence()+i*this.inta);
+                break;
             }
             case QUEST:{
                 
@@ -121,6 +144,10 @@ public enum Itemss {
     }
 
     public boolean czySpełniaWarunki() {
+        if(Wszystko.player.getStrenght()>=this.wymagania_str && Wszystko.player.getDextirity() >= this.wymagania_dex && Wszystko.player.getIntelligence() >= this.wymagania_int) {
+            return true;
+        }
+        else return false;
     }
 
 

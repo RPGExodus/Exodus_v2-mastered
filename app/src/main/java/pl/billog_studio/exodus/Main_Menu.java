@@ -48,6 +48,14 @@ public class Main_Menu extends AppCompatActivity {
                 startActivity(intent);
                 Wszystko.player=new Player();
                 Wszystko.lokacja=Gra.class.getName();
+                Wszystko.player.założone[0]=Itemss.ZardzewiałyMiecz;
+                Itemss.ZardzewiałyMiecz.ilość++;
+                Wszystko.player.założone[1]=Itemss.SpruchniałyLuk;
+                Itemss.SpruchniałyLuk.ilość++;
+                Wszystko.player.założone[2]=Itemss.StareUbranie;
+                Itemss.StareUbranie.ilość++;
+                Wszystko.player.założone[3]=Itemss.MissingNO;
+                Itemss.MissingNO.ilość++;
                 try {
                     Wszystko.saveTheGame();
                 } catch (FileNotFoundException e) {
