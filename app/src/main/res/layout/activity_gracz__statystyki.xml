@@ -20,7 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/scrollView5"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rel">
 
         <TextView
 
@@ -41,7 +42,7 @@
             android:text="New Text"
             android:id="@+id/EqwipunekPlayera"
             android:layout_below="@+id/StatystykiPlayera"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignStart="@+id/StatystykiPlayera" />
 
         <TextView
             android:textSize="18sp"
@@ -50,15 +51,16 @@
             android:layout_height="wrap_content"
             android:text="New Text"
             android:id="@+id/UmiejetnościPlayera"
-            android:layout_below="@+id/EqwipunekPlayera"
-            android:layout_centerHorizontal="true" />
+            android:layout_above="@+id/button_statystyki_wyjdz"
+            android:layout_alignStart="@+id/EqwipunekPlayera" />
+
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Powrót"
             android:id="@+id/button_statystyki_wyjdz"
-            android:layout_below="@+id/UmiejetnościPlayera"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
 </RelativeLayout>

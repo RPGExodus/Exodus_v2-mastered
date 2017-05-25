@@ -10,11 +10,11 @@
     tools:context="pl.billog_studio.exodus.gra_port">
 
     <Button
+        android:textSize="18dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NIE KLIKAJ TEGO, ZAKLINAM CIĘ"
         android:id="@+id/button3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="270dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -11,6 +11,8 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 import Gra.*;
 
 public class gra_shop extends AppCompatActivity {
@@ -21,6 +23,11 @@ public class gra_shop extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        for(int i=0; i<Wszystko.player.getEquipmnent().length;i++)
+        {
+            System.out.println(Wszystko.player.getEquipmnent()[i].nazwa);
+        }
+
         setContentView(R.layout.activity_gra_shop);
         // Handlarz.STATEK.HANDLARZ
         sprzedajnaKurwa=(Handlarz)getIntent().getExtras().get("Handlarz");

@@ -269,4 +269,16 @@ public class Player {
             }
         }
     }
+
+    public String getZałożone() {
+        String fakaya ="";
+        fakaya+="Miecz: "+założone[0].nazwa+"\n"+"Łuk: "+założone[1].nazwa+"\n"+"Zbroja: "+założone[2].nazwa+"\n"+"Tarcza: ";
+        if(założone[3]!=Itemss.MissingNO || założone[3]!=null)
+        {
+            fakaya+=założone[3].nazwa;
+        }
+
+
+        return fakaya;
+    }
 }
