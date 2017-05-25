@@ -25,8 +25,6 @@ public class gra_shop extends AppCompatActivity {
         // Handlarz.STATEK.HANDLARZ
         sprzedajnaKurwa=(Handlarz)getIntent().getExtras().get("Handlarz");
         lin=(LinearLayout) findViewById(R.id.STATEK_HADLARZ_LINEAR);
-    }
-    public void kup(){
         final TextView txv= new TextView(this);
         txv.setTextSize(18);
         txv.setText("Twoje fundusze: "+String.valueOf(Wszystko.player.getGold()));
@@ -41,13 +39,19 @@ public class gra_shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     it.purchase();
-                    onResume();
+                    startActivity(getIntent());
+                    finish();
                 }
             });
             lin.addView(btn);
         }
-    }
-    public void sprzedaj(){
+        final Button wyjdz = (Button)findViewById(R.id.STATEK_HANDLARZ_POWRÓT);
+        wyjdz.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                finish();
+            }
+
+        });
         final TextView txv_2= new TextView(this);
         txv_2.setTextSize(18);
         txv_2.setText("Twoje itemy");
@@ -62,24 +66,11 @@ public class gra_shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     it.sell();
-                    onResume();
+                    startActivity(getIntent());
+                    finish();
                 }
             });
             lin.addView(btn);
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        kup();
-        final Button wyjdz = (Button)findViewById(R.id.STATEK_HANDLARZ_POWRÓT);
-        wyjdz.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                finish();
-            }
-
-        });
-        sprzedaj();
     }
 }

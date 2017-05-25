@@ -45,9 +45,10 @@ public enum Itemss {
                 }
             }
             if(!jestWEq){
-                for (Itemss it:Wszystko.player.equipmnent){
-                    if (it==null || it==Itemss.MissingNO){
-                        it=this;
+                for (int i=0;i<Wszystko.player.equipmnent.length;i++){
+                    if (Wszystko.player.equipmnent[i]==null || Wszystko.player.equipmnent[i]==Itemss.MissingNO){
+                        Wszystko.player.equipmnent[i]=this;
+                        break;
                     }
                 }
             }
@@ -60,9 +61,9 @@ public enum Itemss {
             Wszystko.player.setGold(Wszystko.player.getGold()+this.cena);
             this.ilość--;
             if(ilość==0){
-                for(Itemss it:Wszystko.player.equipmnent){
-                    if(it==this){
-                        it=MissingNO;
+                for(int i=0;i<Wszystko.player.equipmnent.length;i++){
+                    if(Wszystko.player.equipmnent[i]==this){
+                        Wszystko.player.equipmnent[i]=MissingNO;
                         break;
                     }
                 }
