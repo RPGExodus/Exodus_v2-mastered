@@ -57,7 +57,7 @@ public class gra_shop extends AppCompatActivity {
         txv_2.setText("Twoje itemy");
         lin.addView(txv_2);
         for(final Itemss it:Wszystko.player.getEquipmnent()){
-            if(it == Itemss.MissingNO)
+            if(it == Itemss.MissingNO || it==null)
                 continue;
             final Button btn=new Button(this);
             btn.setText(it.dane());

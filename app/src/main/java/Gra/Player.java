@@ -3,6 +3,7 @@ package Gra;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Player {
@@ -70,7 +71,6 @@ public class Player {
         equipmnent = new Itemss[100];
         abillities = new Abillitiess[50];
         team = new Companions[5];
-
     }
 
     public void setStrenght(int strenght) {
