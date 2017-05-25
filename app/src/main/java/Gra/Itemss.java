@@ -1,12 +1,15 @@
 package Gra;
 
+import java.lang.reflect.Method;
+import java.util.function.Function;
+
 /**
  * Created by Raver on 2017-05-23.
  */
 public enum Itemss {
-    MissingNO("0","MISSING ITEM",0,"W sumie item do debugowania."),
-    Pożywienie("1","Pożywienie",10,"Redukuje głod o 20."),
-    Miecz("2","Prosty Miecz",50,"Zwykły miecz, nic specjalnego.")
+    MissingNO("0","MISSING ITEM",0,"W sumie item do debugowania.",0,0,0,0,0,0),
+    Pożywienie("1","Pożywienie",10,"Redukuje głod o 20.",0,0,0,20,0,0),
+    Miecz("2","Prosty Miecz",50,"Zwykły miecz, nic specjalnego.",5,0,0,0,0,0)
     ;
 
     String id;
@@ -14,15 +17,28 @@ public enum Itemss {
     public int cena;
     public String opis;
     public int ilość;
+    public int str;
+    public int dex;
+    public int inta;
+    public int food;
+    public int sleep;
+    public int peste;
+    public Rodzaj rdzj;
 
     public String getID() {
         return id;
     }
-    Itemss(String id,String nazwa,int cena,String opis){
+    Itemss(String id, String nazwa, int cena, String opis, int str, int dex, int inta, int food, int sleep, int peste){
         this.id=id;
         this.nazwa=nazwa;
         this.cena=cena;
         this.opis=opis;
+        this.str=str;
+        this.dex=dex;
+        this.inta=inta;
+        this.food=food;
+        this.sleep=sleep;
+        this.peste=peste;
         ilość=0;
     }
 
@@ -73,4 +89,52 @@ public enum Itemss {
     public String dane(){
         return String.valueOf(this.nazwa+"\n"+this.opis+"\n"+"Cena: "+this.cena+"\nIlość: "+this.ilość);
     }
+
+    public void zdejmij() {
+        this.załóż(-1);
+    }
+
+    public void załóż(int i) {
+        switch (rdzj){
+            case MIECZ:{
+                
+            }
+            case LUK:{
+                
+            }
+            case UŻYTKOWY:{
+                
+            }
+            case ZBROJA:{
+                
+            }
+            case TARCZA:{
+                
+            }
+            case QUEST:{
+                
+            }
+            case INNE:{
+                
+            }
+        }
+    }
+
+    public boolean czySpełniaWarunki() {
+    }
+
+
+    enum Rodzaj{
+        MIECZ,
+        LUK,
+        UŻYTKOWY,
+        ZBROJA,
+        TARCZA,
+        QUEST,
+        INNE;
+        Rodzaj(){
+
+        }
+    }
+
 }

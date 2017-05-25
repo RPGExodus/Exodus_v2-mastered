@@ -3,7 +3,6 @@ package Gra;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Player {
@@ -15,6 +14,7 @@ public class Player {
     int peste;
     int gold;
     Itemss[] equipmnent;
+    private Itemss[] założone;
     Abillitiess[] abillities;
     Companions[] team;
 
@@ -190,5 +190,18 @@ public class Player {
         }
 
         return wyn;
+    }
+    public void załóż(int id_w_eq){
+        switch (equipmnent[id_w_eq].rdzj){
+            case MIECZ:{
+                if(equipmnent[id_w_eq].czySpełniaWarunki()) {
+                    Itemss pom = założone[0];
+                    pom.zdejmij();
+                    założone[0] = equipmnent[id_w_eq];
+                    założone[0].załóż(1);
+                    equipmnent[id_w_eq] = pom;
+                }
+            }
+        }
     }
 }
