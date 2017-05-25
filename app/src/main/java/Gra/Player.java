@@ -177,7 +177,7 @@ public class Player {
                 wyn+=it.nazwa+" : "+it.opis+". "+"Cena: "+it.cena+"\n";
             }
         }
-        wyn+=Itemss.MissingNO.nazwa+" : "+Itemss.MissingNO.opis+". "+"Cena: "+Itemss.MissingNO.cena;
+
         return wyn;
     }
     public String getAbilities(){
@@ -188,7 +188,7 @@ public class Player {
                 wyn+="\n";
             }
         }
-        wyn+=Abillitiess.MissingNO.nazwa;
+
         return wyn;
     }
 }

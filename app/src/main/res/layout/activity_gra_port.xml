@@ -9,4 +9,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pl.billog_studio.exodus.gra_port">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIE KLIKAJ TEGO, ZAKLINAM CIĘ"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="270dp" />
 </RelativeLayout>
