@@ -9,12 +9,58 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pl.billog_studio.exodus.gra_port">
 
-    <Button
-        android:textSize="18dp"
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NIE KLIKAJ TEGO, ZAKLINAM CIĘ"
-        android:id="@+id/button3"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/scrollView6"
+
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EQ"
+                android:id="@+id/button3"
+                android:layout_alignParentTop="true"
+                 />
+
+            <TextView
+                android:layout_below="@id/button3"
+                android:textSize="18sp"
+                android:paddingBottom="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="W związku z panoszącą się zarazą wszyscy muszą zostać zrewidowani. Podczas preszukania znajdujesz zaszytą w koszuli notatkę:"
+                android:id="@+id/textView1"
+                />
+
+            <TextView
+                android:paddingBottom="35dp"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:id="@+id/textView2"
+                android:layout_below="@id/textView1"
+
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jeżeli to czytasz to znaczy, że dawka substancji zmniejszającej tętno była odpowiednia. Wśród wielu moich pacjętów skutkiem ubocznym była niestety całkowita utrata pamięci. Chcę żebyś wiedział, że podałem Ci ją, by ratować Ci życie. Jeżeli udało mi się uciec to na pewno wróciłem do moich pacjentów w Sommpolis. Sommpolis leży około 260 kilometrów od wioski, w której Cię zostawiłem, ale już tylko 50 kilometrów na południe od królewskiego miasta o nazwie Frounht. Musisz znaleźć jakiś sposób by się tam dostać. Nie pozwólmy by to co stało się w naszej rodzinnej wiosce przeszło bez echa! Król musi dowiedzieć się o eksmerymentach Badoyer'a!"/>
+
+            <Button
+                android:layout_below="@id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schowaj notatkę i idź do portu"
+                android:id="@+id/button_to_pest_ogloszenia"
+                />
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

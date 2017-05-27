@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.billog_studio.exodus.pest_goloszenia">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="18sp"
+                android:paddingBottom="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="W porcie trafiasz na tablicę ogłoszeń"
+                android:id="@+id/textView1"
+                />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Straż miejska poszukuje listem gończym Grega Wilka. Posiadaczy jakichkolwiek infoirmacji prosi się o kontakt z miejscowym komisarzem."
+                android:id="@+id/button_to_pest_mission_straz_miejska"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/button_to_pest_mission_straz_miejska"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gildia kupiecka zatrudni od zaraz"
+                android:id="@+id/button_to_pest_mission_gildia_kupiecka"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/button_to_pest_mission_gildia_kupiecka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zaginął miejscowy kowal. Rodzina prosi o kontakt wszystkich posiadających informację pod adresem..."
+                android:id="@+id/button_to_pest_mission_zaginiony_kowal"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/button_to_pest_mission_zaginiony_kowal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karczma Pod Gęsim Piórem zaprasza!"
+                android:id="@+id/button_to_pest_karczma"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/button_to_pest_karczma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miejski rynek czynny codziennie od świtu do nocy."
+                android:id="@+id/button_to_pest_miejski_rynek"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/button_to_pest_miejski_rynek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nowy numer Królewskich Wieści!"
+                android:id="@+id/button_to_krolewskie_wiesci_02"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/button_to_krolewskie_wiesci_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Udaj się do gildii najemników"
+                android:id="@+id/button_to_pest_gildia_najemnikow"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

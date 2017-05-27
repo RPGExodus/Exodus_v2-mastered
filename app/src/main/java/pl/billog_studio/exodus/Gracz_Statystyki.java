@@ -27,7 +27,7 @@ public class Gracz_Statystyki extends AppCompatActivity {
         powrót = (Button) findViewById(R.id.button_statystyki_wyjdz);
         RelativeLayout rel = (RelativeLayout) findViewById(R.id.rel);
         staty.setText(Wszystko.player.getStatystyki());
-        eq.setText(Wszystko.player.getZałożone());
+        eq.setText("Założone przedmioty: "+Wszystko.player.getZałożone());
         for (int i=0; i<Wszystko.player.getEquipmnent().length;i++) {
             if (Wszystko.player.getEquipmnent()[i] == Itemss.MissingNO || Wszystko.player.getEquipmnent()[i] == null)
                 continue;

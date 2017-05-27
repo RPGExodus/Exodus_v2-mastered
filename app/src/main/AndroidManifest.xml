@@ -42,7 +42,15 @@
         <activity android:name=".gra_nowy_dzien" />
         <activity android:name=".gra_shop" />
         <activity android:name=".gra_port" />
-        <activity android:name=".Gracz_Statystyki"></activity>
+        <activity android:name=".Gracz_Statystyki" />
+        <activity android:name=".pest_goloszenia" />
+        <activity android:name=".pest_mission_straz_miejska" />
+        <activity android:name=".pest_mission_gildia_kupiecka" />
+        <activity android:name=".pest_mission_zaginiony_kowal" />
+        <activity android:name=".pest_karczma" />
+        <activity android:name=".pest_miejski_rynek" />
+        <activity android:name=".krolewskie_wiesci" />
+        <activity android:name=".pest_gildia_najemnikow"></activity>
     </application>
 
 </manifest>
