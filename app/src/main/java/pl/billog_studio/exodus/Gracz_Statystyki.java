@@ -38,7 +38,7 @@ public class Gracz_Statystyki extends AppCompatActivity {
 
                 @Override
                 public void onClick(View view) {
-                    Wszystko.player.getEquipmnent()[x].załóż(1);
+                    Wszystko.player.załóż(x);
                     startActivity(getIntent());
                     finish();
                 }
