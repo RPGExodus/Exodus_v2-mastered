@@ -271,12 +271,27 @@ public class Player {
     }
 
     public String getZałożone() {
-        String fakaya ="";
-        fakaya+="Miecz: "+założone[0].nazwa+"\n"+"Łuk: "+założone[1].nazwa+"\n"+"Zbroja: "+założone[2].nazwa+"\n"+"Tarcza: ";
-        if(założone[3]!=Itemss.MissingNO || założone[3]!=null)
-        {
+        String fakaya="";
+        fakaya+="Miecz: ";
+        if((założone[0]==null || założone[0]==Itemss.MissingNO))
+            fakaya+="Puste";
+        else
+            fakaya+=założone[0].nazwa;
+        fakaya+="\n"+"Łuk: ";
+        if((założone[1]==null || założone[1]==Itemss.MissingNO))
+            fakaya+="Puste";
+        else
+            fakaya+=założone[1].nazwa;
+        fakaya+="\n"+"Zbroja: ";
+        if((założone[2]==null || założone[2]==Itemss.MissingNO))
+            fakaya+="Puste";
+        else
+            fakaya+=założone[2].nazwa+"\n"+"Tarcza: ";
+        if((założone[3]==null || założone[3]==Itemss.MissingNO))
+            fakaya+="Puste";
+        else
             fakaya+=założone[3].nazwa;
-        }
+
 
 
         return fakaya;

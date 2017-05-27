@@ -25,6 +25,8 @@ public class gra_shop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         for(int i=0; i<Wszystko.player.getEquipmnent().length;i++)
         {
+            if(Wszystko.player.getEquipmnent()[i]==null)
+                continue;
             System.out.println(Wszystko.player.getEquipmnent()[i].nazwa);
         }
 

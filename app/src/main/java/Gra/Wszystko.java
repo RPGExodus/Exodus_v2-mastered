@@ -15,6 +15,10 @@ import java.util.Scanner;
 public class Wszystko {
     public static Player player;
     public static String lokacja;
+    public static int dzień=1;
+    public static int godzina=12;
+
+
 
     public static File zapis;
     public static File questy;
@@ -29,5 +33,8 @@ public class Wszystko {
         player.wczytajDane(zapis);
         Quests.importDane(questy);
         lokacja= new Scanner(lok).next();
+    }
+    public static void czas(int upływCzasu){
+
     }
 }
