@@ -60,7 +60,7 @@ public class pest_goloszenia extends AppCompatActivity {
                 finish();
             }});
         final Button button7 = (Button)findViewById(R.id.button_to_pest_gildia_najemnikow);
-        button7.setVisibility(View.INVISIBLE);
+        button7.setVisibility((Quests.PEST_GILDIA_NAJEMNICY.available==true && Quests.PEST_GILDIA_NAJEMNICY.completed==false)?View.VISIBLE:View.INVISIBLE);
         button7.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
 

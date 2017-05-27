@@ -18,11 +18,11 @@ public enum Quests {
     PEST_KARAWANA_do_Frount(false,false),
     PEST_REKRUTACJA_DO_STRAZY_MIEJSKIEJ(false, false),
     PEST_KARCZMA_PRZYJACIEL_CHOPINA(false, true);
-    boolean completed, available;
+    public boolean completed, available;
 
     Quests(boolean completed, boolean available) {
-        this.available = available;
         this.completed = completed;
+        this.available = available;
     }
 
     public static String exportDane() {
