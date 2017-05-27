@@ -183,7 +183,7 @@ public class Player {
     public String getAbilities(){
         String wyn="";
         for(Abillitiess ab:abillities){
-            if(ab !=Abillitiess.MissingNO || ab!=null){
+            if(ab !=Abillitiess.MissingNO && ab!=null){
                 wyn+=ab.nazwa;
                 wyn+="\n";
             }
