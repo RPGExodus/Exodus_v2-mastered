@@ -31,6 +31,7 @@ public class Main_Menu extends AppCompatActivity {
         Wszystko.zapis=new File(getApplicationContext().getFilesDir(),"save");
         Wszystko.questy=new File(getApplicationContext().getFilesDir(),"quests");
         Wszystko.lok=new File(getApplicationContext().getFilesDir(),"location");
+        Wszystko.item=new File(getApplicationContext().getFilesDir(),"item");
 
         try {
             Scanner sc=new Scanner(Wszystko.zapis);

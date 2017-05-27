@@ -1,6 +1,9 @@
 package Gra;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
+import java.util.Scanner;
 import java.util.function.Function;
 
 /**
@@ -82,7 +85,6 @@ public enum Itemss {
             this.ilość++;
         }
     }
-
     public void sell() {
         if(this.ilość>0){
             Wszystko.player.setGold(Wszystko.player.getGold()+this.cena);
@@ -100,7 +102,18 @@ public enum Itemss {
     public String dane(){
         return String.valueOf(this.nazwa+"\n"+this.opis+"\n"+"Cena: "+this.cena+"\nIlość: "+this.ilość);
     }
+    public static String save(){
+        String dane="";
+        for (Itemss it: Itemss.values())
+            dane+=it.ilość+"\n";
 
+        return dane;
+    }
+    public static void wczytaj(File dane) throws FileNotFoundException {
+        Scanner sc=new Scanner(dane);
+        for (Itemss it:Itemss.values())
+            it.ilość=sc.nextInt();
+    }
     public void zdejmij() {
         this.załóż(-1);
     }

@@ -123,19 +123,25 @@ public class Player {
             if(a !=null)
                 dane+=a.getID();
             else
-                dane+="null";
+                dane+="0";
             dane+="\n";
         }
         for(Abillitiess a:this.abillities){
             if(a!=null)dane+=a.getID();
             else
-                dane+="null";
+                dane+="0";
             dane+="\n";
         }
         for(Companions a:this.team){
             if(a!=null)dane+=a.getID();
             else
-                dane+="null";
+                dane+="0";
+            dane+="\n";
+        }
+        for (Itemss założony: założone){
+            if(założony!=null)dane+=założony.getID();
+            else
+                dane+="0";
             dane+="\n";
         }
         return dane;
@@ -158,6 +164,9 @@ public class Player {
         }
         for (int i=0;i<team.length;i++){
             team[i]=Companions.get(in.next());
+        }
+        for (int i=0;i<założone.length;i++){
+            założone[i]=Itemss.get(in.next());
         }
 
     }

@@ -23,16 +23,19 @@ public class Wszystko {
     public static File zapis;
     public static File questy;
     public static File lok;
+    public static File item;
     public static void saveTheGame() throws IOException {
 
         new FileOutputStream(zapis).write(player.getAllData().getBytes());
         new FileOutputStream(questy).write(Quests.exportDane().getBytes());
         new FileOutputStream(lok).write(lokacja.getBytes());
+        new FileOutputStream(item).write(Itemss.save().getBytes());
     }
     public static void wczytajGrę() throws FileNotFoundException {
         player.wczytajDane(zapis);
         Quests.importDane(questy);
         lokacja= new Scanner(lok).next();
+        Itemss.wczytaj(item);
     }
     public static void czas(int upływCzasu){
 
