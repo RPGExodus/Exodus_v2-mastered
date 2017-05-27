@@ -10,6 +10,8 @@ import Gra.*;
 
 import org.w3c.dom.Text;
 
+import java.io.IOException;
+
 public class Gracz_Statystyki extends AppCompatActivity {
 
     TextView staty;
@@ -50,6 +52,11 @@ public class Gracz_Statystyki extends AppCompatActivity {
             powrót.setOnClickListener(new Button.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    try {
+                        Wszystko.saveTheGame();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     finish();
                 }
             });
