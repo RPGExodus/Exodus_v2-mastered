@@ -288,7 +288,8 @@ public class Player {
         if((założone[2]==null || założone[2]==Itemss.MissingNO))
             fakaya+="Puste";
         else
-            fakaya+=założone[2].nazwa+"\n"+"Tarcza: ";
+            fakaya+=założone[2].nazwa;
+        fakaya+="\n"+"Tarcza: ";
         if((założone[3]==null || założone[3]==Itemss.MissingNO))
             fakaya+="Puste";
         else
