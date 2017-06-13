@@ -10,57 +10,78 @@
     tools:context="pl.billog_studio.exodus.Gracz_Statystyki">
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView5"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/scrollView5"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/rel">
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/StatystykiPlayera"
-            android:layout_alignParentTop="true"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_centerHorizontal="true"
-            android:textSize="18sp"
-            android:paddingBottom="35dp"/>
+            android:id="@+id/rel">
 
-        <TextView
-            android:textSize="18sp"
-            android:paddingBottom="35dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/EqwipunekPlayera"
-            android:layout_below="@+id/StatystykiPlayera"
-            android:layout_alignStart="@+id/StatystykiPlayera" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <TextView
-            android:textSize="18sp"
-            android:paddingBottom="35dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/UmiejetnościPlayera"
-            android:layout_above="@+id/button_statystyki_wyjdz"
-            android:layout_alignStart="@+id/EqwipunekPlayera" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/StatystykiPlayera"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"
+                    android:paddingBottom="35dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_bottony">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:paddingBottom="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/EqwipunekPlayera"
+                     />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:paddingBottom="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/UmiejetnościPlayera"
+
+                    android:layout_alignStart="@+id/EqwipunekPlayera" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powrót"
+                    android:id="@+id/button_statystyki_wyjdz"
+                    android:layout_below="@id/EqwipunekPlayera"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Powrót"
-            android:id="@+id/button_statystyki_wyjdz"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

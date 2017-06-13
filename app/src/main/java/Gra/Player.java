@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class Player {
     int strenght;
     int dextirity;
@@ -211,7 +212,28 @@ public class Player {
 
                     założone[0] = equipmnent[id_w_eq];
                     założone[0].załóż(1);
-                    equipmnent[id_w_eq] = pom;
+                    założone[0].ilość--;
+                    boolean czyJest= false;
+                    int pierwszePuste;
+                    for(int i=0;i<this.equipmnent.length;i++)
+                    {
+                        if(equipmnent[i]==pom)
+                        {
+                            czyJest=true;
+                            break;
+                        }
+
+                    }
+                    if(!czyJest){
+                        for (int i=0;i<Wszystko.player.equipmnent.length;i++){
+                            if (Wszystko.player.equipmnent[i]==null || Wszystko.player.equipmnent[i]==Itemss.MissingNO){
+                                Wszystko.player.equipmnent[i]=pom;
+                                break;
+                            }
+                        }
+                    }
+                    pom.ilość++;
+                    pom=null;
                 }
                 else
                 {
@@ -220,39 +242,96 @@ public class Player {
                 break;
             }
             case LUK: {
-                Itemss pom = założone[0];
+                Itemss pom = założone[1];
                 pom.zdejmij();
                 if (equipmnent[id_w_eq].czySpełniaWarunki()) {
 
                     założone[1] = equipmnent[id_w_eq];
                     założone[1].załóż(1);
-                    equipmnent[id_w_eq] = pom;
+                    założone[1].ilość--;
+                    boolean czyJest = false;
+                    int pierwszePuste;
+                    for (int i = 0; i < this.equipmnent.length; i++) {
+                        if (equipmnent[i] == pom) {
+                            czyJest = true;
+                            break;
+                        }
+
+                    }
+                    if (!czyJest) {
+                        for (int i = 0; i < Wszystko.player.equipmnent.length; i++) {
+                            if (Wszystko.player.equipmnent[i] == null || Wszystko.player.equipmnent[i] == Itemss.MissingNO) {
+                                Wszystko.player.equipmnent[i] = pom;
+                                break;
+                            }
+                        }
+                    }
+                    pom.ilość++;
+                    pom = null;
                 } else {
                     pom.załóż(1);
                 }
                 break;
             }
             case ZBROJA: {
-                Itemss pom = założone[0];
+                Itemss pom = założone[2];
                 pom.zdejmij();
                 if (equipmnent[id_w_eq].czySpełniaWarunki()) {
 
                     założone[2] = equipmnent[id_w_eq];
                     założone[2].załóż(1);
-                    equipmnent[id_w_eq] = pom;
+                    założone[2].ilość--;
+                    boolean czyJest = false;
+                    int pierwszePuste;
+                    for (int i = 0; i < this.equipmnent.length; i++) {
+                        if (equipmnent[i] == pom) {
+                            czyJest = true;
+                            break;
+                        }
+
+                    }
+                    if (!czyJest) {
+                        for (int i = 0; i < Wszystko.player.equipmnent.length; i++) {
+                            if (Wszystko.player.equipmnent[i] == null || Wszystko.player.equipmnent[i] == Itemss.MissingNO) {
+                                Wszystko.player.equipmnent[i] = pom;
+                                break;
+                            }
+                        }
+                    }
+                    pom.ilość++;
+                    pom = null;
                 } else {
                     pom.załóż(1);
                 }
                 break;
             }
             case TARCZA: {
-                Itemss pom = założone[0];
+                Itemss pom = założone[3];
                 pom.zdejmij();
                 if (equipmnent[id_w_eq].czySpełniaWarunki()) {
 
                     założone[3] = equipmnent[id_w_eq];
                     założone[3].załóż(1);
-                    equipmnent[id_w_eq] = pom;
+                    założone[3].ilość--;
+                    boolean czyJest = false;
+                    int pierwszePuste;
+                    for (int i = 0; i < this.equipmnent.length; i++) {
+                        if (equipmnent[i] == pom) {
+                            czyJest = true;
+                            break;
+                        }
+
+                    }
+                    if (!czyJest) {
+                        for (int i = 0; i < Wszystko.player.equipmnent.length; i++) {
+                            if (Wszystko.player.equipmnent[i] == null || Wszystko.player.equipmnent[i] == Itemss.MissingNO) {
+                                Wszystko.player.equipmnent[i] = pom;
+                                break;
+                            }
+                        }
+                    }
+                    pom.ilość++;
+                    pom = null;
                 } else {
                     pom.załóż(1);
                 }
@@ -282,7 +361,7 @@ public class Player {
     }
 
     public String getZałożone() {
-        String fakaya="";
+        String fakaya=" ";
         fakaya+="Miecz: ";
         if((założone[0]==null || założone[0]==Itemss.MissingNO))
             fakaya+="Puste";

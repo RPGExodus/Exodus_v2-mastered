@@ -31,7 +31,6 @@ public class gra_port extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(gra_port.this, Gracz_Statystyki.class);
                 startActivity(intent);
-                finish();
     }});
         final Button button3 = (Button)findViewById(R.id.button_to_pest_ogloszenia);
         button3.setOnClickListener(new Button.OnClickListener() {

@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-
+import Gra.*;
 import java.util.Arrays;
 
 import Gra.*;
@@ -23,6 +23,9 @@ public class gra_shop extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Wszystko.player.setGold(Wszystko.player.getGold()+270);
+
+
         for(int i=0; i<Wszystko.player.getEquipmnent().length;i++)
         {
             if(Wszystko.player.getEquipmnent()[i]==null)
