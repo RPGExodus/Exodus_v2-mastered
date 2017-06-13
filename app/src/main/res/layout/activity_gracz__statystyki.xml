@@ -37,6 +37,15 @@
                     android:layout_centerHorizontal="true"
                     android:textSize="18sp"
                     android:paddingBottom="35dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:layout_below="@id/StatystykiPlayera"
+                    android:id="@+id/Debuffy" />
             </RelativeLayout>
 
             <LinearLayout

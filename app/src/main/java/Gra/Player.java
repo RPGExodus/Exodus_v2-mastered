@@ -387,7 +387,7 @@ public class Player {
 
         return fakaya;
     }
-    public static float debuff_glod(int food)
+    public float debuff_glod()
     {
         if(food==0) return 0f;
         else if(food<25) return 0.2f;
@@ -396,7 +396,7 @@ public class Player {
         else  return 1f;
 
     }
-    public static float debuff_sen(int sleep)
+    public float debuff_sen()
     {
         if(sleep==0) return 0f;
         else if(sleep<20) return 0.15f;

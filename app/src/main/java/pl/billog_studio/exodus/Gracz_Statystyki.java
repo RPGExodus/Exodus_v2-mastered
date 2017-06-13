@@ -17,12 +17,15 @@ public class Gracz_Statystyki extends AppCompatActivity {
     TextView eq;
     TextView umie;
     Button powrót;
+    private TextView debuffy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gracz__statystyki);
         staty = (TextView) findViewById(R.id.StatystykiPlayera);
+        debuffy= (TextView) findViewById(R.id.Debuffy);
+        ustawDebuffy();
         eq=(TextView) findViewById(R.id.EqwipunekPlayera);
         umie = (TextView) findViewById(R.id.UmiejetnościPlayera);
         powrót = (Button) findViewById(R.id.button_statystyki_wyjdz);
@@ -57,6 +60,17 @@ public class Gracz_Statystyki extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void ustawDebuffy() {
+        String text="";
+        if(Wszystko.player.debuff_glod()!=0){
+            text+=String.format("Jesteś głodny -> Minus %3d%n",Wszystko.player.debuff_glod()*100);
+        }
+        if(Wszystko.player.debuff_sen()!=0){
+            text+=String.format("Jesteś śpiący -> Minus %3d%n",Wszystko.player.debuff_sen()*100);
+        }
+        if(!text.isEmpty()) debuffy.setText(text);
     }
 
 }
