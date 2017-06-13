@@ -15,6 +15,7 @@ import java.util.Scanner;
 public class Wszystko {
     public static Player player;
     public static String lokacja;
+    public static Czas arkaGdynia;
     public static int dzień=1;
     public static int godzina=12;
 
@@ -37,7 +38,5 @@ public class Wszystko {
         lokacja= new Scanner(lok).next();
         Itemss.wczytaj(item);
     }
-    public static void czas(int upływCzasu){
 
-    }
 }
